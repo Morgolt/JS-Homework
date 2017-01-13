@@ -1,0 +1,21 @@
+{
+	"port": 8081,
+	"routes": {
+		"/": {
+			"handler": "main",
+			"action": "index"
+		},
+		"/cities": {
+			"handler": "main",
+			"action": "sendCities"
+		},
+		"/tickets": {
+			"handler": "main",
+			"action": "tickets"
+		},
+		"/reserve": {
+			"handler": "main",
+			"action": "reserveTickets"
+		}
+	}
+}

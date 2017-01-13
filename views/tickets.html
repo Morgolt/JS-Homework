@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order tickets</title>
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+  <style type="text/css" media="screen">
+	.container {
+		border-radius: 25px;
+		width: 20%;
+		padding: 10px;
+		border: 1px solid #424242;
+		margin: 0 auto;
+		background: linear-gradient(to top, #33691E, #F1F8E9);
+	}
+	form {
+		padding: 5px;
+		margin: 0 auto;
+	}
+	input {
+		border-radius: 5px;
+	}
+	select {
+		border-radius: 5px;
+		outline: none;
+  		padding: 3px 0px 3px 3px;
+  		margin: 5px 1px 3px 0px;
+  		border: 1px solid #DDDDDD;
+	}
+	select:focus {
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		box-shadow: 0 0 5px #000000;
+		border: 3px solid solid #000000;
+	}
+	input[type=text] {
+		outline: none;
+  		padding: 3px 0px 3px 3px;
+  		margin: 5px 1px 3px 0px;
+  		border: 1px solid #DDDDDD;
+	}	
+	input[type=text]:focus {
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		box-shadow: 0 0 5px #000000;
+		border: 3px solid solid #000000;
+	}
+	button {
+		border-radius: 5px;
+		padding: 5px;
+		width: 50%;
+		margin: 5% 25% 2% 25%;
+	}  	
+  </style>
+</head>
+
+<body>
+	<div class="container">
+		<form id="ticket_form" accept-charset="utf-8" >
+			<label>Имя: <br><input type="text" name="name" required></label><br>
+			<label>Фамилия: <br><input type="text" name="surname" required=""></label><br>
+			<label>Кол-во билетов: <br><input type="text" name="ticket_count" value="1" required></label><br>
+			<label>Откуда: <br><select name="city_from" required>
+				<option value=""></option>
+			</select></label><br>
+			<label>Куда: <br><select name="city_to" required>
+				<option value=""></option>
+			</select></label><br>
+			<label>Дата отлета: <br><input type="date" name="date_of_departure" required></label><br>
+			<button type="submit">Подтвердить</button>
+		</form>
+	</div>
+</body>
+
+</html>
