@@ -1,0 +1,17 @@
+{
+  "name": "nodeserv",
+  "version": "1.0.0",
+  "description": "Homework for university",
+  "main": "server.js",
+  "dependencies": {
+    "libxslt": "^0.6.3",
+    "promise": "^7.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
